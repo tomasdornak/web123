@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Web</title>
+    <meta name="keywords" content="CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="topnav">
+        <div id="myLinks">
+            <a href="#" class="active">Domů</a>
+            <a href="#">Novinky</a>
+            <a href="#">Kontakt</a>
+            <a href="#">O nás</a>
+            </div>
+        <button class="blue" id="dropdown-toggle"><i class="fa-solid fa-bars"></i></button>
+
+    </div>
+
+</header>
+
+<section class="content-wrapper">
+    <div class="banner">
+        <p>Levý banner</p>
+
+    </div>
+
+    <div class="content">
+        <p>Obsah</p>
+        <table>
+            <tr>
+                <th>2016</th>
+                <th>2017</th>
+                <th>2018</th>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>15</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>10</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>25</td>
+                <td>35</td>
+            </tr>
+            <tr>
+        </table>
+
+    </div>
+</section>
+
+<footer>
+    <p>Footer</p>
+</footer>
+
+<div class="container">
+    <div class="center">
+        <button> CANCEL</button>
+    </div>
+</div>
+
+
+
+</body>
+
+<script>
+    (() => {
+        $("#dropdown-toggle").click(() => {
+            $("#myLinks").toggle();
+            $('#eye').find("i").toggleClass("fa-eye fa-eye-slash");
+        });
+    })();
+</script>
+
+</html>
